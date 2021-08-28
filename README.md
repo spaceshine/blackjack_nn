@@ -25,21 +25,21 @@ How it work? / Code structure
    - def get_data_from_cards(): # gives expected from nn output 
 
 3. Building and training a neural network
-~~~
+~~~ python
 model = Sequential([
           InputLayer((2,)),
           Dense(32, activation='relu'),
           Dense(1, activation='tanh')
 ])
 ~~~
-~~~
+~~~ python
 model.compile(
     optimizer=Adam(0.001),
     loss='mean_squared_error',
     metrics=['accuracy']
 )
 ~~~
-~~~
+~~~ python
 model.fit(X, Y, batch_size=32, epochs=25, verbose=0)
 ~~~
 4. Using nn in games with auto dealer and virtual money balance
@@ -53,7 +53,8 @@ How to try
 If you want to experiment with this program
 
 Google Colaboratory:
-   - download and copy yourself .ipynb file
+   - copy from 
+   https://colab.research.google.com/drive/12gk_r1jcvCL96CiPstF61wct804AudiT?usp=sharing
 
 Jupyter notebook:
    - download .ipynb file
@@ -71,6 +72,16 @@ Windows/MacOS/Linux and other platforms:
    - https://matplotlib.org/stable/users/installing.html
 
 
+Authors
+-------
 
-written on 28.08.21
-@spaceshine
+- spaceshine
+https://github.com/spaceshine
+
+License
+-------
+
+GNU General Public License v3.0
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+28.08.2021
