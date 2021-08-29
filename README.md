@@ -1,5 +1,5 @@
 # blackjack_nn
-perceptron-based neural network learns to play blackjack
+Perceptron-based neural network learns to play blackjack
 
 
 What is it?
@@ -11,6 +11,25 @@ can automate the process of gambling (blackjack).
 The program is written on python 3.6.9 in Google Colaboratory
 
 It has code comments on RU
+
+Rules
+-----
+
+Neural network plays blackjack by American rules:
+   - dealer has 1 card open, 1 card closed
+   - if dealer have 17, he stand.
+
+I took them from wiki: https://en.wikipedia.org/wiki/Blackjack
+
+But for the sake of simplicity, I left only actions
+   - hit
+   - stand
+
+In a future, I will add other decisions, such as
+   - double down
+   - split
+   - surrender
+
 
 How it work? / Code structure
 -----------------------------
@@ -49,8 +68,6 @@ model.fit(X, Y, batch_size=32, epochs=25, verbose=0)
 
 How to try
 ----------
-
-If you want to experiment with this program
 
 Google Colaboratory:
    - copy from 
