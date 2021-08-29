@@ -1,6 +1,8 @@
 # blackjack_nn
 Perceptron-based neural network learns to play blackjack
 
+![blackjack_table](https://user-images.githubusercontent.com/80642434/131244478-1ac29d98-cbf6-4c94-9ddd-276e99f67ea8.png)
+
 
 What is it?
 -----------
